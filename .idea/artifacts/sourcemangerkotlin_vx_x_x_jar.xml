@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="sourcemanger-k:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/sourcemanger_k_jar</output-path>
+  <artifact type="jar" build-on-make="true" name="sourcemangerkotlin-vx.x.x:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/sourcemangerkotlin_vx_x_x_jar</output-path>
     <root id="archive" name="sourcemanger-k.jar">
       <element id="module-output" name="sourcemanger-k" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.9.0/kotlin-stdlib-jdk8-1.9.0.jar" path-in-jar="/" />
