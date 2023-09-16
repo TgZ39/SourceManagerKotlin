@@ -11,6 +11,18 @@
 
 ---
 
+## Features
+
+- add multiple sources
+- copy sources to clipboard
+- save sources to disk
+
+### Features to add
+- GUI
+- custom copy layout
+
+---
+
 ## Contributing
 
 - Download the source using `git clone https://github.com/TgZ39/SourceManagerKotlin/`
