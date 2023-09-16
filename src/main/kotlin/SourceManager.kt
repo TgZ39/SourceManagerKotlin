@@ -1,7 +1,7 @@
 
 
 fun main() {
-    println("SourceManager-K 0.1")
+    println("SourceManagerKotlin v1.0.1")
 
     val sources = SourceSaver()
     sources.createSaveFile()

@@ -5,7 +5,7 @@ import java.io.File
 class SourceSaver {
 
     var sourcesList: MutableList<MutableMap<String, String>> = mutableListOf()
-    private val saveFile = File(System.getProperty("user.home") + "\\.sourcemanagerK\\sources.json")
+    private val saveFile = File(System.getProperty("user.home") + "\\.sourcemanagerkotlin\\sources.json")
 
 
     // Add Source to List as Map
@@ -70,7 +70,7 @@ class SourceSaver {
     }
 
     fun createSaveFile() {
-        val folderPath = File(System.getProperty("user.home") + "\\.sourcemanagerK\\")
+        val folderPath = File(System.getProperty("user.home") + "\\.sourcemanagerkotlin\\")
 
         if (!folderPath.exists()) {
             folderPath.mkdirs()
