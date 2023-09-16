@@ -22,7 +22,8 @@ class SourceSaver {
         val currentsource = sourcesList[index]
 
         if (!flat) {
-            val source = """
+
+            return """
                 Index: $index
                 URL: ${currentsource["url"]}
                 Title: ${currentsource["title"]}
@@ -30,15 +31,11 @@ class SourceSaver {
                 Release Year: ${currentsource["releaseYear"]}
                 Date of Check: ${currentsource["date"]}""".trimIndent()
 
-            return source
-
         } else {
-            if (currentsource["authorLastName"]?.isEmpty() == false) {
-                val source = "[] ${currentsource["authorLastName"]}, ${currentsource["authorFirstName"]} (${currentsource["releaseYear"]}): ${currentsource["title"]} URL: ${currentsource["url"]} [Stand: ${currentsource["date"]}]"
-                return source
+            return if (currentsource["authorLastName"]?.isEmpty() == false) {
+                "[] ${currentsource["authorLastName"]}, ${currentsource["authorFirstName"]} (${currentsource["releaseYear"]}): ${currentsource["title"]} URL: ${currentsource["url"]} [Stand: ${currentsource["date"]}]"
             } else {
-                val source = "[] ${currentsource["authorFirstName"]} (${currentsource["releaseYear"]}): ${currentsource["title"]} URL: ${currentsource["url"]} [Stand: ${currentsource["date"]}]"
-                return source
+                "[] ${currentsource["authorFirstName"]} (${currentsource["releaseYear"]}): ${currentsource["title"]} URL: ${currentsource["url"]} [Stand: ${currentsource["date"]}]"
             }
         }
     }
