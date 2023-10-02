@@ -119,5 +119,4 @@ fun selectOption(sources: SourceSaver) {
     }
 
     println()
-    println("Hello World")
 }
